@@ -24,8 +24,26 @@ class _HomeScreenState extends State<HomeScreen> {
   }
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
 
+    body: Padding(
+      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+        Center(
+          child: Container(
+            color: Colors.red,
+            height: 50,
+            width: 50,
+            child: Center(child: Text('Notification',style: TextStyle(fontSize: 16),)),
+          ),
+        )
+        ],
+      ),
+    ),
     );
   }
 }
